@@ -1,158 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Red Wing Property Maintenance LLC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Wing Property Maintenance LLC</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f2f2f2;
-      color: #111;
-    }
+<style>
+* { box-sizing: border-box; }
 
-    /* HEADER */
-    header {
-      background: #000;
-      padding: 16px 20px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+  color: #111;
+}
 
-    .header-inner {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
+/* HEADER */
+header {
+  background: #000;
+  padding: 16px;
+}
 
-    .logo {
-      height: 48px;
-    }
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-    .brand h1 {
-      color: #c40000;
-      margin: 0 0 6px 0;
-      font-size: 1.4rem;
-    }
+.logo {
+  height: 48px;
+}
 
-    nav {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+nav a {
+  color: white;
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
+nav a:hover {
+  color: #c40000;
+}
 
-    nav a:hover {
-      color: #c40000;
-    }
+/* HERO */
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 90px 20px;
+}
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-      url("https://images.unsplash.com/photo-1592595896616-c37162298647");
-      background-size: cover;
-      background-position: center;
-      padding: 90px 20px;
-      color: white;
-    }
+.hero-box {
+  max-width: 900px;
+  background: rgba(0,0,0,.6);
+  padding: 30px;
+  border-left: 6px solid #c40000;
+  color: white;
+}
 
-    .hero-content {
-      max-width: 900px;
-      margin: auto;
-      background: rgba(0,0,0,.55);
-      padding: 30px;
-      border-left: 6px solid #c40000;
-    }
+.hero h1 {
+  color: #ff3b3b;
+  margin-top: 0;
+}
 
-    .hero h2 {
-      color: #ff3b3b;
-      margin-top: 0;
-      font-size: 2rem;
-    }
+/* SECTIONS */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    /* SECTIONS */
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+h2 {
+  color: #c40000;
+}
 
-    h3 {
-      color: #c40000;
-      margin-bottom: 24px;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
 
-    /* SERVICES */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.card {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #c40000;
+  box-shadow: 0 4px 8px rgba(0,0,0,.08);
+}
 
-    .card {
-      background: white;
-      padding: 18px;
-      border-left: 5px solid #c40000;
-      box-shadow: 0 4px 10px rgba(0,0,0,.08);
-    }
+/* IMAGE SECTIONS – FIXED */
+.image-section {
+  width: 100%;
+  height: 360px;
+  min-height: 360px;
+  background-size: cover;
+  background-position: center;
+}
 
-    /* IMAGE SECTIONS */
-    .image-strip {
-      width: 100%;
-      height: 360px;
-      background-size: cover;
-      background-position: center;
-      margin: 60px 0;
-    }
+/* REVIEWS */
+.reviews {
+  background: #111;
+  color: white;
+}
 
-    /* TESTIMONIALS */
-    .testimonial {
-      background: #111;
-      color: white;
-      padding: 20px;
-      border-left: 5px solid #c40000;
-      margin-bottom: 16px;
-    }
+.review {
+  background: #1b1b1b;
+  padding: 20px;
+  border-left: 5px solid #c40000;
+  margin-bottom: 20px;
+}
 
-    /* CONTACT */
-    .contact {
-      background: #c40000;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
+.stars {
+  color: gold;
+}
 
-    footer {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 16px;
-      font-size: 0.85rem;
-    }
+/* CONTACT */
+.contact {
+  background: #c40000;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .header-inner {
-        flex-direction: column;
-        text-align: center;
-      }
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+}
 
-      .logo {
-        height: 56px;
-      }
-
-      nav {
-        justify-content: center;
-      }
-    }
-  </style>
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 16px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -160,77 +149,41 @@
 <header>
   <div class="header-inner">
     <img src="logo.png" alt="Red Wing Property Maintenance Logo" class="logo">
-    <div class="brand">
-      <h1>Red Wing Property Maintenance LLC</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#booking">Booking</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h2>Reliable Property Maintenance in Red Wing, MN</h2>
+  <div class="hero-box">
+    <h1>Reliable Property Maintenance in Red Wing, MN</h1>
     <p>
-      Professional landscaping, snow removal, and property maintenance
-      for residential and commercial properties. Dependable, efficient,
-      and locally owned.
+      Professional landscaping, snow removal, and year-round property maintenance
+      for residential and commercial properties.
     </p>
   </div>
 </section>
 
 <section id="services">
-  <h3>Our Services</h3>
+  <h2>Our Services</h2>
   <div class="grid">
     <div class="card">Landscaping</div>
     <div class="card">Snow Removal</div>
     <div class="card">Pressure Washing</div>
     <div class="card">Tree Removal</div>
     <div class="card">Shrub & Bush Trimming</div>
-    <div class="card">Spring & Fall Clean Ups</div>
+    <div class="card">Spring & Fall Cleanups</div>
     <div class="card">Leaf Removal</div>
     <div class="card">Grading</div>
     <div class="card">Weed Control</div>
   </div>
 </section>
 
-<div class="image-strip" style="background-image:url('https://images.unsplash.com/photo-1560185127-6ed189bf02c8');"></div>
+<!-- LANDSCAPING IMAGE -->
+<div class="image-section" style="background-image:url('https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1600&q=80');"></div>
 
-<section>
-  <h3>Why Choose Us</h3>
-  <div class="grid">
-    <div class="card">Locally owned & operated in Red Wing</div>
-    <div class="card">Dependable, on-time service</div>
-    <div class="card">Residential & commercial properties</div>
-    <div class="card">All-season landscaping & snow removal</div>
-    <div class="card">Professional equipment & experience</div>
-    <div class="card">Request-only scheduling</div>
-  </div>
-</section>
-
-<div class="image-strip" style="background-image:url('https://images.unsplash.com/photo-1604082773623-9f7c0f36f2c1');"></div>
-
-<div class="image-strip" style="background-image:url('https://images.unsplash.com/photo-1612831662082-1fae16c9d6db');"></div>
-
-<section>
-  <h3>Testimonials</h3>
-  <div class="testimonial">“Reliable, professional, and great results every time.”</div>
-  <div class="testimonial">“Best snow removal service in Red Wing.”</div>
-</section>
-
-<section id="contact" class="contact">
-  <h3>Request a Quote or Schedule Service</h3>
-  <p>Email: redwingpropertymaintenance@gmail.com</p>
-</section>
-
-<footer>
-  © 2026 Red Wing Property Maintenance LLC · Red Wing, Minnesota
-</footer>
-
-</body>
-</html>
+<!-- RESIDENTIAL LANDSCAPING -->
+<div class="image-section" style="background-image:url('https://images.unsplash.com/photo-1597008034913-7f3a5f17bfb8?auto
