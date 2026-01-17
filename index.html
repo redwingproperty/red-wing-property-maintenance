@@ -58,4 +58,182 @@ nav a:hover { text-decoration: underline; }
   max-width: 900px;
   padding: 30px;
 }
-.hero h2 { font-size:
+.hero h2 { font-size: 36px; margin-top: 0; }
+
+/* SECTIONS */
+section {
+  padding: 60px 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+.soft { background: #f4f6f4; }
+.green { background: #eef4ee; }
+h2 { color: #c40000; }
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 15px;
+}
+.services div {
+  background: #fff;
+  padding: 15px;
+  border-left: 4px solid #c40000;
+}
+
+/* PHOTO BREAKS */
+.photo {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+.photo.one {
+  background-image: url("https://images.unsplash.com/photo-1580587771525-78b9dba3b914");
+}
+.photo.two {
+  background-image: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6");
+}
+
+/* WHY US */
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 20px;
+}
+.reason {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #c40000;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #c40000;
+}
+
+/* CTA */
+.cta {
+  background: #c40000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 25px;
+}
+.cta a {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MAP */
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h2 { font-size: 28px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="logo.png" alt="Red Wing Property Maintenance Logo">
+      <h1>Red Wing Property Maintenance LLC</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Booking</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-box">
+    <h2>Reliable Property Maintenance in Red Wing, MN</h2>
+    <p>Professional landscaping, snow removal, and property maintenance for residential and commercial properties.</p>
+  </div>
+</div>
+
+<section class="soft">
+<h2>Our Services</h2>
+<div class="services">
+  <div>Landscaping</div>
+  <div>Snow Removal</div>
+  <div>Pressure Washing</div>
+  <div>Tree Removal</div>
+  <div>Shrub & Bush Trimming</div>
+  <div>Spring & Fall Clean Ups</div>
+  <div>Leaf Removal</div>
+  <div>Grading</div>
+  <div>Weed Control</div>
+</div>
+</section>
+
+<div class="photo one"></div>
+
+<section class="green">
+<h2>Why Choose Us</h2>
+<div class="reasons">
+  <div class="reason">Locally owned & operated in Red Wing</div>
+  <div class="reason">Dependable, on-time service</div>
+  <div class="reason">Residential & commercial properties</div>
+  <div class="reason">All-season landscaping & snow removal</div>
+  <div class="reason">Professional equipment & experience</div>
+  <div class="reason">Request-only scheduling</div>
+</div>
+</section>
+
+<div class="photo two"></div>
+
+<section class="soft">
+<h2>Customer Testimonials</h2>
+<div class="testimonial">“Reliable, professional, and great results every time.”</div>
+<div class="testimonial">“Best snow removal service in Red Wing. Always shows up.”</div>
+<div class="testimonial">“Highly recommend for both summer and winter maintenance.”</div>
+</section>
+
+<section class="map">
+<h2>Serving Red Wing, Minnesota</h2>
+<iframe 
+  src="https://www.google.com/maps?q=Red+Wing+Minnesota&output=embed">
+</iframe>
+</section>
+
+<div class="cta">
+<h2>Request a Quote Today</h2>
+<a href="tel:+16510000000">📞 Call Now</a>
+<a href="mailto:redwingpropertymaintenance@gmail.com">✉️ Email Us</a>
+</div>
+
+<footer>
+© 2026 Red Wing Property Maintenance LLC · Red Wing, Minnesota
+</footer>
+
+</body>
+</html>
