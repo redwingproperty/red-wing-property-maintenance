@@ -3,119 +3,153 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>Landscaping & Snow Removal | Red Wing Property Maintenance LLC</title>
-
-<meta name="description" content="Professional landscaping, snow removal, and property maintenance in Red Wing, MN." />
-<meta name="robots" content="index, follow" />
+<title>Red Wing Property Maintenance LLC</title>
 
 <style>
+:root {
+  --red:#b30000;
+  --dark:#111;
+  --light:#f6f6f6;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #222;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#222;
+  background:#fff;
 }
 
 header {
-  background: #000;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#000;
+  color:#fff;
+  padding:15px 25px;
+  z-index:1000;
 }
 
-header img {
-  height: 38px;
+header nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-nav a {
-  color: #fff;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-size: 0.9rem;
+header a {
+  color:#fff;
+  text-decoration:none;
+  margin-left:15px;
+  font-size:14px;
 }
 
 .hero {
+  margin-top:70px;
   background:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1592928302636-8c8c1a1b1c25");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 4rem 1.5rem;
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover;
+  color:#fff;
+  padding:110px 25px;
 }
 
 .hero h1 {
-  max-width: 700px;
-  font-size: 2rem;
+  font-size:34px;
+  margin-bottom:10px;
 }
 
 .hero p {
-  max-width: 700px;
+  max-width:600px;
+  font-size:17px;
 }
 
 section {
-  padding: 3rem 1.5rem;
-  max-width: 1100px;
-  margin: auto;
+  padding:70px 25px;
+  max-width:1200px;
+  margin:auto;
 }
 
 h2 {
-  color: #b30000;
-  margin-bottom: 1.5rem;
+  color:var(--red);
+  margin-bottom:25px;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
 }
 
 .card {
-  background: #fff;
-  padding: 1rem;
-  border-left: 4px solid #b30000;
-  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  background:#fff;
+  border-left:4px solid var(--red);
+  padding:15px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  font-size:14px;
 }
 
-.separator {
-  height: 240px;
-  background-size: cover;
-  background-position: center;
-  margin: 3rem 0;
+.divider {
+  height:260px;
+  background-size:cover;
+  background-position:center;
 }
 
-/* LANDSCAPING SEPARATORS */
-.services-sep {
-  background-image: url("https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b");
+#divider-services {
+  background-image:url("https://images.unsplash.com/photo-1597008641621-60b9a1b1f4b0");
 }
 
-.why-sep {
-  background-image: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6");
+#divider-work {
+  background-image:url("https://images.unsplash.com/photo-1600585153837-0f03bdfb1f59");
 }
 
-.work-sep {
-  background-image: url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae");
+#divider-snow {
+  background-image:url("https://images.unsplash.com/photo-1607889175119-45c87bca1b77");
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
 }
 
 .gallery img {
-  width: 100%;
-  border-radius: 4px;
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:6px;
 }
 
 .reviews {
-  background: #fff;
-  padding: 1.5rem;
-  border-left: 4px solid #b30000;
+  background:var(--light);
+  border-left:4px solid var(--red);
+  padding:20px;
 }
 
 footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+}
+
+/* CALL/TEXT BUTTON */
+.call-btn {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:var(--red);
+  color:#fff;
+  padding:14px 18px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,.4);
+  z-index:2000;
+}
+
+.call-btn span {
+  display:block;
+  font-size:12px;
+  font-weight:normal;
 }
 </style>
 </head>
@@ -123,19 +157,20 @@ footer {
 <body>
 
 <header>
-  <img src="logo.png" alt="Red Wing Property Maintenance Logo">
   <nav>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
+    <strong>Red Wing Property Maintenance LLC</strong>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+    </div>
   </nav>
 </header>
 
-<div class="hero">
+<section class="hero">
   <h1>Reliable Property Maintenance in Red Wing, MN</h1>
   <p>Professional landscaping, snow removal, and year-round property maintenance for residential and commercial properties.</p>
-</div>
+</section>
 
 <section id="services">
   <h2>Our Services</h2>
@@ -152,7 +187,7 @@ footer {
   </div>
 </section>
 
-<div class="separator services-sep"></div>
+<div class="divider" id="divider-services"></div>
 
 <section>
   <h2>Why Choose Us</h2>
@@ -166,18 +201,18 @@ footer {
   </div>
 </section>
 
-<div class="separator why-sep"></div>
+<div class="divider" id="divider-work"></div>
 
-<section id="portfolio">
+<section id="work">
   <h2>Our Work</h2>
-  <div class="grid gallery">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Freshly cut residential lawn">
-    <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6" alt="Trimmed shrubs and mulch beds">
-    <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178" alt="Residential retaining wall landscaping">
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1598908315692-7bafc0a1f6d4">
+    <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3">
+    <img src="https://images.unsplash.com/photo-1600585154204-19b3c82b51f1">
   </div>
 </section>
 
-<div class="separator work-sep"></div>
+<div class="divider" id="divider-snow"></div>
 
 <section id="reviews">
   <h2>Google Reviews</h2>
@@ -187,9 +222,15 @@ footer {
   </div>
 </section>
 
-<footer id="contact">
+<footer>
   © 2026 Red Wing Property Maintenance LLC
 </footer>
+
+<!-- CALL / TEXT BUTTON -->
+<a class="call-btn" href="tel:16517037488">
+  Call / Text
+  <span>651-703-7488</span>
+</a>
 
 </body>
 </html>
