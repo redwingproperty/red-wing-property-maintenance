@@ -34,3 +34,178 @@ nav a {
   margin-right: 15px;
   text-decoration: none;
   font-size: 14px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1597008641621-bfcefd71cd25") center/cover;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 30px;
+  max-width: 700px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 16px;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h3 {
+  color: #c40000;
+  margin-bottom: 20px;
+}
+
+.services, .why, .portfolio, .testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #c40000;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.booking {
+  background: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.booking h3 {
+  color: #c40000;
+}
+
+.booking form {
+  max-width: 500px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+}
+
+button {
+  background: #c40000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Red Wing Property Maintenance LLC</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Reliable Property Maintenance in Red Wing, MN</h2>
+  <p>
+    Professional landscaping, snow removal, and year-round property maintenance
+    for residential and commercial properties.
+  </p>
+</div>
+
+<section id="services">
+  <h3>Our Services</h3>
+  <div class="services">
+    <div class="card">Landscaping</div>
+    <div class="card">Snow Removal</div>
+    <div class="card">Pressure Washing</div>
+    <div class="card">Tree Removal</div>
+    <div class="card">Shrub & Bush Trimming</div>
+    <div class="card">Spring & Fall Clean Ups</div>
+    <div class="card">Leaf Removal</div>
+    <div class="card">Grading</div>
+    <div class="card">Weed Control</div>
+  </div>
+</section>
+
+<section>
+  <h3>Why Choose Us</h3>
+  <div class="why">
+    <div class="card">Locally owned & operated in Red Wing</div>
+    <div class="card">Dependable, on-time service</div>
+    <div class="card">Residential & commercial properties</div>
+    <div class="card">All-season landscaping & snow removal</div>
+    <div class="card">Professional equipment & experience</div>
+    <div class="card">Request-only scheduling</div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h3>Our Work</h3>
+  <div class="portfolio">
+    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623" alt="Landscaping">
+    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705" alt="Property maintenance">
+    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" alt="Snow removal">
+  </div>
+</section>
+
+<section>
+  <h3>Customer Testimonials</h3>
+  <div class="testimonials">
+    <div class="card">⭐⭐⭐⭐⭐<br>“Reliable, professional, and always does great work.”</div>
+    <div class="card">⭐⭐⭐⭐⭐<br>“Snow removal was fast and dependable all winter.”</div>
+    <div class="card">⭐⭐⭐⭐⭐<br>“Our property has never looked better.”</div>
+  </div>
+</section>
+
+<section id="booking" class="booking">
+  <h3>Request a Booking</h3>
+  <form action="mailto:redwingpropertymaintenance@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="details" rows="5" placeholder="Describe the service you need"></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h3>Contact Us</h3>
+  <p>Email: redwingpropertymaintenance@gmail.com</p>
+  <p>Location: Red Wing, Minnesota</p>
+</section>
+
+<footer>
+  © 2026 Red Wing Property Maintenance LLC
+</footer>
+
+</body>
+</html>
