@@ -1,71 +1,170 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Red Wing Property Maintenance LLC</title>
-  <meta name="description" content="Professional landscaping and snow removal services in Red Wing, Minnesota." />
+
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#fff; color:#000; }
-    header { background:#000; color:#fff; padding:20px; }
-    header h1 { margin:0; color:#c40000; }
-    nav a { color:#fff; margin-right:15px; text-decoration:none; font-weight:bold; }
-    section { padding:60px 20px; max-width:1100px; margin:auto; }
-    h2 { color:#c40000; }
-    .services ul { columns:2; list-style:square; }
-    .cta { background:#c40000; color:#fff; padding:40px; text-align:center; }
-    .cta a { background:#000; color:#fff; padding:12px 20px; text-decoration:none; font-weight:bold; }
-    footer { background:#000; color:#fff; text-align:center; padding:20px; }
-    form input, form textarea { width:100%; padding:10px; margin-bottom:10px; }
-    form button { background:#c40000; color:#fff; border:none; padding:12px; font-size:16px; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    /* HEADER */
+    header {
+      background: #000;
+      padding: 24px 20px 16px;
+    }
+
+    header h1 {
+      color: #c00000;
+      margin: 0 0 12px 0;
+      font-size: 26px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-right: 18px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      background-image: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+      ),
+      url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      max-width: 700px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      color: #c00000;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .services li {
+      list-style: square;
+      margin-left: 18px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials p {
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #c00000;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+    }
   </style>
 </head>
-<body><header>
-  <h1>Red Wing Property Maintenance LLC</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#booking">Booking</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header><section id="home">
-  <h2><div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1568605114967-8130f3a36994'); background-size: cover; background-position: center; padding: 6rem 1.5rem;">
-<h1 style="color:#fff;">Reliable Property Maintenance in Red Wing, MN</h1>
-<p style="color:#fff; max-width:700px;">We provide professional landscaping and snow removal services for residential and commercial properties. Dependable, efficient, and locally owned.</p>
-</div></p>
-</section><section id="services" class="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>Landscaping</li>
-    <li>Snow Removal</li>
-    <li>Pressure Washing</li>
-    <li>Tree Removal</li>
-    <li>Shrub & Bush Trimming</li>
-    <li>Spring & Fall Clean Ups</li>
-    <li>Leaf Removal</li>
-    <li>Grading</li>
-    <li>Weed Control</li>
-  </ul>
-</section><section id="portfolio">
-  <h2>Our Work</h2>
-  <p>Gallery coming soon. Contact us to see examples of recent projects.</p>
-</section><section id="testimonials">
-  <h2>Testimonials</h2>
-  <p>"Reliable, professional, and great results every time."</p>
-  <p>"Best snow removal service in Red Wing."</p>
-</section><section id="booking" class="cta">
-  <h2>Request a Service</h2>
-  <p>Fill out the form below to request a quote or schedule service.</p>
-</section><section id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formsubmit.co/redwingpropertymaintenance@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="How can we help?" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section><footer>
-  <p>&copy; 2026 Red Wing Property Maintenance LLC | Red Wing, Minnesota</p>
-</footer></body>
+
+<body>
+
+  <header>
+    <h1>Red Wing Property Maintenance LLC</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Booking</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Reliable Property Maintenance in Red Wing, MN</h2>
+    <p>
+      We provide professional landscaping and snow removal services for
+      residential and commercial properties. Dependable, efficient,
+      and locally owned.
+    </p>
+  </div>
+
+  <section>
+    <h3>Our Services</h3>
+    <ul class="services">
+      <li>Landscaping</li>
+      <li>Snow Removal</li>
+      <li>Pressure Washing</li>
+      <li>Tree Removal</li>
+      <li>Shrub & Bush Trimming</li>
+      <li>Spring & Fall Clean Ups</li>
+      <li>Leaf Removal</li>
+      <li>Grading</li>
+      <li>Weed Control</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h3>Testimonials</h3>
+    <p>“Reliable, professional, and great results every time.”</p>
+    <p>“Best snow removal service in Red Wing.”</p>
+  </section>
+
+  <div class="contact">
+    <p>Fill out the form below to request a quote or schedule service.</p>
+  </div>
+
+  <footer>
+    © 2026 Red Wing Property Maintenance LLC · Red Wing, Minnesota
+  </footer>
+
+</body>
 </html>
