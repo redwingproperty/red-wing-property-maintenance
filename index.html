@@ -1,117 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Red Wing Property Maintenance LLC</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Red Wing Property Maintenance LLC</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
 
-    header {
-      background: #000;
-      color: #fff;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+header {
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    header img {
-      height: 40px;
-    }
+header img {
+  height: 40px;
+}
 
-    nav a {
-      color: #fff;
-      margin-left: 15px;
-      text-decoration: none;
-      font-size: 14px;
-    }
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-    /* HERO SECTION */
-    .hero {
-      background: linear-gradient(
-          rgba(0,0,0,0.55),
-          rgba(0,0,0,0.55)
-        ),
-        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c")
-        center/cover no-repeat;
-      padding: 80px 20px;
-      color: #fff;
-    }
+.hero {
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+  url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+  padding: 80px 20px;
+  color: #fff;
+}
 
-    .hero h1 {
-      font-size: 28px;
-      max-width: 700px;
-    }
+.hero h1 {
+  max-width: 700px;
+  font-size: 28px;
+}
 
-    .hero p {
-      max-width: 700px;
-      line-height: 1.5;
-    }
+.hero p {
+  max-width: 700px;
+  line-height: 1.5;
+}
 
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-    h2 {
-      color: #b30000;
-      margin-bottom: 20px;
-    }
+h2 {
+  color: #b30000;
+  margin-bottom: 20px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
 
-    .card {
-      background: #fff;
-      padding: 15px;
-      border-left: 4px solid #b30000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-size: 14px;
-    }
+.card {
+  background: #fff;
+  padding: 15px;
+  border-left: 4px solid #b30000;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  font-size: 14px;
+}
 
-    .work-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
+/* IMAGE DIVIDERS */
+.divider {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
 
-    .work-grid img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
+.divider.services {
+  background-image: url("https://images.unsplash.com/photo-1596495578065-9b0c8e7d2c3a");
+}
 
-    .reviews {
-      background: #fff;
-      padding: 20px;
-      border-left: 4px solid #b30000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+.divider.why {
+  background-image: url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae");
+}
 
-    .star {
-      color: gold;
-    }
+.divider.work {
+  background-image: url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3");
+}
 
-    footer {
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.work-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.reviews {
+  background: #fff;
+  padding: 20px;
+  border-left: 4px solid #b30000;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.star {
+  color: gold;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+</style>
 </head>
 
 <body>
@@ -149,6 +164,8 @@
   </div>
 </section>
 
+<div class="divider services"></div>
+
 <section>
   <h2>Why Choose Us</h2>
   <div class="grid">
@@ -161,27 +178,26 @@
   </div>
 </section>
 
+<div class="divider why"></div>
+
 <section>
   <h2>Our Work</h2>
   <div class="work-grid">
     <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02b7" alt="Residential landscaping">
     <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46b5" alt="Snow plowing service">
-    <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471" alt="Outdoor property maintenance">
+    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115" alt="Outdoor property maintenance">
   </div>
 </section>
+
+<div class="divider work"></div>
 
 <section>
   <h2>Google Reviews</h2>
   <div class="reviews">
-    <p>
-      <span class="star">★★★★★</span><br>
-      “Dependable, professional, and always on time.
-      Best property maintenance in Red Wing.”
-    </p>
-    <p>
-      <span class="star">★★★★★</span><br>
-      “Great snow removal service — reliable all winter.”
-    </p>
+    <p><span class="star">★★★★★</span><br>
+    “Dependable, professional, and always on time. Best property maintenance in Red Wing.”</p>
+    <p><span class="star">★★★★★</span><br>
+    “Great snow removal service — reliable all winter.”</p>
   </div>
 </section>
 
