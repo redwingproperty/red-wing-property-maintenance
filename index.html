@@ -9,72 +9,64 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #111;
+  background: #f5f5f5;
+  color: #333;
 }
 
 header {
   background: #000;
   color: #fff;
   padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header h1 {
-  margin: 0;
-  color: #c40000;
-  font-size: 22px;
-}
-
-nav {
-  margin-top: 8px;
+header img {
+  height: 40px;
 }
 
 nav a {
   color: #fff;
-  margin-right: 15px;
+  margin-left: 15px;
   text-decoration: none;
   font-size: 14px;
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-  url("https://images.unsplash.com/photo-1597008641621-bfcefd71cd25") center/cover;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1563492065599-3520f775eeed");
+  background-size: cover;
+  background-position: center;
+  padding: 70px 20px;
   color: #fff;
-  padding: 80px 20px;
 }
 
-.hero h2 {
-  font-size: 30px;
+.hero h1 {
   max-width: 700px;
 }
 
-.hero p {
-  max-width: 700px;
-  font-size: 16px;
+.section {
+  padding: 40px 20px;
 }
 
-section {
-  padding: 50px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h3 {
-  color: #c40000;
+.section h2 {
+  color: #b30000;
   margin-bottom: 20px;
 }
 
-.services, .why, .portfolio, .testimonials {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
 .card {
   background: #fff;
   padding: 20px;
-  border-left: 5px solid #c40000;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  border-left: 5px solid #b30000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .portfolio img {
@@ -82,34 +74,10 @@ h3 {
   border-radius: 4px;
 }
 
-.booking {
-  background: #000;
-  color: #fff;
-  padding: 50px 20px;
-}
-
-.booking h3 {
-  color: #c40000;
-}
-
-.booking form {
-  max-width: 500px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: none;
-}
-
-button {
-  background: #c40000;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  width: 100%;
-  font-size: 16px;
+.reviews {
+  background: #fff;
+  padding: 30px;
+  border-left: 5px solid #b30000;
 }
 
 footer {
@@ -125,26 +93,26 @@ footer {
 <body>
 
 <header>
-  <h1>Red Wing Property Maintenance LLC</h1>
+  <img src="logo.png" alt="Red Wing Property Maintenance Logo">
   <nav>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
-    <a href="#booking">Booking</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<div class="hero">
-  <h2>Reliable Property Maintenance in Red Wing, MN</h2>
+<section class="hero">
+  <h1>Reliable Property Maintenance in Red Wing, MN</h1>
   <p>
     Professional landscaping, snow removal, and year-round property maintenance
     for residential and commercial properties.
   </p>
-</div>
+</section>
 
-<section id="services">
-  <h3>Our Services</h3>
-  <div class="services">
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
     <div class="card">Landscaping</div>
     <div class="card">Snow Removal</div>
     <div class="card">Pressure Washing</div>
@@ -157,9 +125,9 @@ footer {
   </div>
 </section>
 
-<section>
-  <h3>Why Choose Us</h3>
-  <div class="why">
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <div class="grid">
     <div class="card">Locally owned & operated in Red Wing</div>
     <div class="card">Dependable, on-time service</div>
     <div class="card">Residential & commercial properties</div>
@@ -169,38 +137,32 @@ footer {
   </div>
 </section>
 
-<section id="portfolio">
-  <h3>Our Work</h3>
-  <div class="portfolio">
-    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623" alt="Landscaping">
-    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705" alt="Property maintenance">
-    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" alt="Snow removal">
+<section id="portfolio" class="section">
+  <h2>Our Work</h2>
+  <div class="grid portfolio">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Professional landscaping work">
+    <img src="https://images.unsplash.com/photo-1611095566888-f144604d1b7a" alt="Snow removal service">
+    <img src="https://images.unsplash.com/photo-1597008641621-bfcefd71cd25" alt="Outdoor property maintenance">
   </div>
 </section>
 
-<section>
-  <h3>Customer Testimonials</h3>
-  <div class="testimonials">
-    <div class="card">⭐⭐⭐⭐⭐<br>“Reliable, professional, and always does great work.”</div>
-    <div class="card">⭐⭐⭐⭐⭐<br>“Snow removal was fast and dependable all winter.”</div>
-    <div class="card">⭐⭐⭐⭐⭐<br>“Our property has never looked better.”</div>
+<section id="reviews" class="section">
+  <h2>Google Reviews</h2>
+  <div class="reviews">
+    ⭐⭐⭐⭐⭐<br>
+    “Dependable, professional, and always on time. Best property maintenance in Red Wing.”<br><br>
+    ⭐⭐⭐⭐⭐<br>
+    “Great snow removal service — reliable all winter.”
   </div>
 </section>
 
-<section id="booking" class="booking">
-  <h3>Request a Booking</h3>
-  <form action="mailto:redwingpropertymaintenance@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="details" rows="5" placeholder="Describe the service you need"></textarea>
-    <button type="submit">Send Request</button>
-  </form>
-</section>
-
-<section id="contact">
-  <h3>Contact Us</h3>
-  <p>Email: redwingpropertymaintenance@gmail.com</p>
-  <p>Location: Red Wing, Minnesota</p>
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>
+    📍 Red Wing, MN<br>
+    📞 Call or text for scheduling<br>
+    📧 Email available upon request
+  </p>
 </section>
 
 <footer>
