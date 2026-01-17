@@ -188,4 +188,132 @@ footer {
   padding:15px 20px;
   border-radius:50px;
   font-weight:bold;
-  box-shadow:0 4px 14px rgba(0,
+  box-shadow:0 4px 14px rgba(0,0,0,.4);
+  z-index:2000;
+}
+
+.call-btn span {
+  display:block;
+  font-size:12px;
+  font-weight:normal;
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+  .hero h1 { font-size:30px; }
+  header nav { display:none; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <strong>Red Wing Property Maintenance LLC</strong>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Reliable Property Maintenance in Red Wing, MN</h1>
+    <p>Professional landscaping, snow removal, and year-round property maintenance for residential and commercial properties.</p>
+    <div class="cta">
+      <a href="tel:16517037488">Call or Text 651-703-7488</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">Landscaping</div>
+      <div class="card">Snow Removal</div>
+      <div class="card">Pressure Washing</div>
+      <div class="card">Tree Removal</div>
+      <div class="card">Shrub & Bush Trimming</div>
+      <div class="card">Spring & Fall Clean Ups</div>
+      <div class="card">Leaf Removal</div>
+      <div class="card">Grading</div>
+      <div class="card">Weed Control</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why Choose Us</h2>
+    <div class="grid">
+      <div class="card">Locally owned & operated</div>
+      <div class="card">Dependable, on-time service</div>
+      <div class="card">Residential & commercial</div>
+      <div class="card">All-season services</div>
+      <div class="card">Professional equipment</div>
+      <div class="card">Request-only scheduling</div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <img src="images/work-1.jpg" alt="Landscaping project Red Wing MN">
+      <img src="images/work-2.jpg" alt="Property maintenance service">
+      <img src="images/work-3.jpg" alt="Snow removal Red Wing MN">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Service Areas</h2>
+    <div class="grid">
+      <div class="card">Red Wing, MN</div>
+      <div class="card">Goodhue County</div>
+      <div class="card">Lake City</div>
+      <div class="card">Cannon Falls</div>
+      <div class="card">Surrounding Communities</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      ⭐⭐⭐⭐⭐ “Dependable, professional, and always on time.”<br><br>
+      ⭐⭐⭐⭐⭐ “Reliable snow removal and great landscaping work.”
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Request Service</h2>
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="How can we help?" rows="4"></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Red Wing Property Maintenance LLC
+</footer>
+
+<a class="call-btn" href="tel:16517037488">
+  Call / Text
+  <span>651-703-7488</span>
+</a>
+
+</body>
+</html>
