@@ -2,169 +2,214 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Red Wing Property Maintenance LLC</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #fff;
+      background: #ffffff;
       color: #111;
+      line-height: 1.6;
     }
 
-    /* HEADER */
     header {
       background: #000;
-      padding: 24px 20px 16px;
+      padding: 25px 20px 15px;
     }
 
     header h1 {
-      color: #c00000;
-      margin: 0 0 12px 0;
+      color: #c40000;
+      margin: 0 0 12px;
       font-size: 26px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
     }
 
     nav a {
       color: #fff;
-      margin-right: 18px;
       text-decoration: none;
-      font-weight: 500;
+      margin: 0 12px;
+      font-weight: bold;
+      font-size: 14px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* HERO */
     .hero {
-      background-image: linear-gradient(
+      background: linear-gradient(
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
       ),
-      url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
-      background-size: cover;
-      background-position: center;
-      padding: 80px 20px;
+      url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+      padding: 90px 20px;
       color: #fff;
     }
 
     .hero h2 {
-      font-size: 36px;
-      max-width: 700px;
-      margin-bottom: 16px;
+      font-size: 32px;
+      max-width: 900px;
     }
 
     .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      line-height: 1.5;
+      max-width: 700px;
+      font-size: 16px;
     }
 
-    /* SECTIONS */
+    .call-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #c40000;
+      color: #fff;
+      padding: 12px 22px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
     section {
       padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
-    section h3 {
-      color: #c00000;
+    h3 {
+      color: #c40000;
       margin-bottom: 20px;
-      font-size: 26px;
     }
 
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
+      gap: 15px;
     }
 
     .services li {
-      list-style: square;
-      margin-left: 18px;
+      list-style: none;
+      padding: 6px 0;
     }
 
-    /* TESTIMONIALS */
-    .testimonials p {
-      font-style: italic;
-      margin-bottom: 14px;
+    .why-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
 
-    /* CONTACT */
-    .contact {
-      background: #c00000;
+    .why-card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-left: 5px solid #c40000;
+    }
+
+    .testimonials blockquote {
+      background: #f8f8f8;
+      padding: 18px;
+      margin: 15px 0;
+      border-left: 5px solid #c40000;
+    }
+
+    .google-link {
+      margin-top: 10px;
+    }
+
+    .cta {
+      background: #c40000;
       color: #fff;
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
 
-    .contact p {
-      font-size: 18px;
-    }
-
-    /* FOOTER */
     footer {
       background: #000;
       color: #fff;
       text-align: center;
-      padding: 16px;
-      font-size: 14px;
+      padding: 15px;
+      font-size: 13px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Red Wing Property Maintenance LLC</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Testimonials</a>
-      <a href="#">Booking</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Red Wing Property Maintenance LLC</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Testimonials</a>
+    <a href="#">Booking</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-  <div class="hero">
-    <h2>Reliable Property Maintenance in Red Wing, MN</h2>
-    <p>
-      We provide professional landscaping and snow removal services for
-      residential and commercial properties. Dependable, efficient,
-      and locally owned.
-    </p>
+<section class="hero">
+  <h2>Reliable Property Maintenance in Red Wing, MN</h2>
+  <p>
+    Professional landscaping and snow removal for residential and commercial properties.
+    Dependable, efficient, and locally owned.
+  </p>
+  <a class="call-btn" href="tel:+1XXXXXXXXXX">Call or Text for a Free Quote</a>
+</section>
+
+<section>
+  <h3>Our Services</h3>
+  <ul class="services">
+    <li>Landscaping</li>
+    <li>Snow Removal</li>
+    <li>Pressure Washing</li>
+    <li>Tree Removal</li>
+    <li>Shrub & Bush Trimming</li>
+    <li>Spring & Fall Clean Ups</li>
+    <li>Leaf Removal</li>
+    <li>Grading</li>
+    <li>Weed Control</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Why Choose Us</h3>
+  <div class="why-us">
+    <div class="why-card">Locally owned and operated in Red Wing</div>
+    <div class="why-card">Reliable, on-time service you can trust</div>
+    <div class="why-card">All-season property maintenance</div>
+    <div class="why-card">Residential & commercial experience</div>
+    <div class="why-card">Request-only scheduling — no surprises</div>
+    <div class="why-card">Fully focused on quality workmanship</div>
   </div>
+</section>
 
-  <section>
-    <h3>Our Services</h3>
-    <ul class="services">
-      <li>Landscaping</li>
-      <li>Snow Removal</li>
-      <li>Pressure Washing</li>
-      <li>Tree Removal</li>
-      <li>Shrub & Bush Trimming</li>
-      <li>Spring & Fall Clean Ups</li>
-      <li>Leaf Removal</li>
-      <li>Grading</li>
-      <li>Weed Control</li>
-    </ul>
-  </section>
+<section class="testimonials">
+  <h3>Customer Reviews</h3>
 
-  <section class="testimonials">
-    <h3>Testimonials</h3>
-    <p>“Reliable, professional, and great results every time.”</p>
-    <p>“Best snow removal service in Red Wing.”</p>
-  </section>
+  <blockquote>
+    “Reliable, professional, and great results every time.”
+    <br><strong>– Cheryl G., Google Review</strong>
+  </blockquote>
 
-  <div class="contact">
-    <p>Fill out the form below to request a quote or schedule service.</p>
+  <blockquote>
+    “Best snow removal service in Red Wing. Always shows up when promised.”
+    <br><strong>– Local Customer, Google Review</strong>
+  </blockquote>
+
+  <div class="google-link">
+    ⭐⭐⭐⭐⭐ 5.0 rating —
+    <a href="https://g.page/r/CcZUHm1EQw5fEBM/review" target="_blank">
+      Read all reviews on Google
+    </a>
   </div>
+</section>
 
-  <footer>
-    © 2026 Red Wing Property Maintenance LLC · Red Wing, Minnesota
-  </footer>
+<section class="cta">
+  <h3>Serving Red Wing & Surrounding Areas</h3>
+  <p>Request a quote today for dependable property maintenance.</p>
+</section>
+
+<footer>
+  © 2026 Red Wing Property Maintenance LLC · Red Wing, Minnesota
+</footer>
 
 </body>
 </html>
