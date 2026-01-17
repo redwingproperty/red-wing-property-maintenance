@@ -17,3 +17,177 @@
       background: #000;
       color: #fff;
       padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(
+          rgba(0,0,0,0.55),
+          rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c")
+        center/cover no-repeat;
+      padding: 80px 20px;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      max-width: 700px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-left: 4px solid #b30000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 14px;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .work-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .reviews {
+      background: #fff;
+      padding: 20px;
+      border-left: 4px solid #b30000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .star {
+      color: gold;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Red Wing Property Maintenance Logo">
+  <nav>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Reviews</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Reliable Property Maintenance in Red Wing, MN</h1>
+  <p>
+    Professional landscaping, snow removal, and year-round property maintenance
+    for residential and commercial properties.
+  </p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">Landscaping</div>
+    <div class="card">Snow Removal</div>
+    <div class="card">Pressure Washing</div>
+    <div class="card">Tree Removal</div>
+    <div class="card">Shrub & Bush Trimming</div>
+    <div class="card">Spring & Fall Clean Ups</div>
+    <div class="card">Leaf Removal</div>
+    <div class="card">Grading</div>
+    <div class="card">Weed Control</div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">Locally owned & operated in Red Wing</div>
+    <div class="card">Dependable, on-time service</div>
+    <div class="card">Residential & commercial properties</div>
+    <div class="card">All-season landscaping & snow removal</div>
+    <div class="card">Professional equipment & experience</div>
+    <div class="card">Request-only scheduling</div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Work</h2>
+  <div class="work-grid">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02b7" alt="Residential landscaping">
+    <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46b5" alt="Snow plowing service">
+    <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471" alt="Outdoor property maintenance">
+  </div>
+</section>
+
+<section>
+  <h2>Google Reviews</h2>
+  <div class="reviews">
+    <p>
+      <span class="star">★★★★★</span><br>
+      “Dependable, professional, and always on time.
+      Best property maintenance in Red Wing.”
+    </p>
+    <p>
+      <span class="star">★★★★★</span><br>
+      “Great snow removal service — reliable all winter.”
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Red Wing Property Maintenance LLC
+</footer>
+
+</body>
+</html>
